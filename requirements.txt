@@ -1,7 +1,12 @@
 pymongo
 langchain
+setuptools
+wheel
 langchain_community
 openai
 langchain_openai
 apify_client
-dotenv
+python-dotenv
+langgraph
+langchain-ollama
+langsmith

@@ -1,9 +1,8 @@
 from apify_client import ApifyClient
-import requests
 from dotenv import load_dotenv
 import os
 
-def main():
+def web_scrapper():
     load_dotenv()
     # Initialize the ApifyClient with your API token
     API_KEY = os.getenv("AMIFY_API_TOKEN_KEY")
@@ -60,7 +59,6 @@ def main():
     # Run the Actor and wait for it to finish
     run = client.actor("aYG0l9s7dbB7j3gbS").call(run_input=run_input)
 
-
     item = client.dataset(run["defaultDatasetId"]).iterate_items()
     title = item.get('metadata', {}).get('title')
     description = item.get('metadata', {}).get('description')
@@ -74,6 +72,4 @@ def main():
             "keywords": keywords,
             "url": url}
 
-if __name__ == "__main__":
-    main()
 
