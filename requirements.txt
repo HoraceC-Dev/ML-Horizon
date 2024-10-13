@@ -1,0 +1,7 @@
+pymongo
+langchain
+langchain_community
+openai
+langchain_openai
+apify_client
+dotenv
