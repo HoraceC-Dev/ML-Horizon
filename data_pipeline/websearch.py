@@ -2,6 +2,7 @@ import requests
 from dotenv import load_dotenv
 import os
 import requests
+import httpx
 # Load environment variables from .env file
 
 def brave_search(query, num_results=15, safesearch="moderate", freshness="2020-10-09to2024-10-09",summary=False):
@@ -40,3 +41,5 @@ def brave_search(query, num_results=15, safesearch="moderate", freshness="2020-1
     else:
         print(f"Error: {response.status_code} - {response.text}")
         return []
+    
+

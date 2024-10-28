@@ -2,7 +2,7 @@ from apify_client import ApifyClient
 from dotenv import load_dotenv
 import os
 
-def web_scrapper():
+async def web_scrapper(url):
     load_dotenv()
     # Initialize the ApifyClient with your API token
     API_KEY = os.getenv("AMIFY_API_TOKEN_KEY")
@@ -34,7 +34,7 @@ def web_scrapper():
     "saveScreenshots": False,
     "startUrls": [
         {
-        "url": "https://www.engineering.utoronto.ca/"
+        "url": url
         }
     ],
     "useSitemaps": False,
@@ -59,7 +59,9 @@ def web_scrapper():
     # Run the Actor and wait for it to finish
     run = client.actor("aYG0l9s7dbB7j3gbS").call(run_input=run_input)
 
-    item = client.dataset(run["defaultDatasetId"]).iterate_items()
+    generator_item = client.dataset(run["defaultDatasetId"]).iterate_items()
+    list_of_item = list(generator_item)
+    item = list_of_item[0]
     title = item.get('metadata', {}).get('title')
     description = item.get('metadata', {}).get('description')
     author = item.get('metadata', {}).get('author')
