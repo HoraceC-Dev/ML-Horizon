@@ -64,8 +64,9 @@ class MongoDB():
         ]
         collection = self._get_collection()
         result = collection.aggregate(pipeline)
+        print(result)
         for doc in result:
-            if doc["score"] >= 0.9:
+            if doc["score"] >= 0.9899999:
                 return False
         return True
 
