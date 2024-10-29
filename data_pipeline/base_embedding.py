@@ -30,3 +30,4 @@ def get_embedding_model(model_id="amazon.titan-embed-text-v2:0"):
     )
 
     return embeddings
+
