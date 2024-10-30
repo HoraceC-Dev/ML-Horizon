@@ -33,7 +33,7 @@ class MongoDB():
     def _get_vectorstore(self):
         embeddings = get_embedding_model()
         vector_store = MongoDBAtlasVectorSearch(
-            collection=self._get_collection(),
+            collection=self._get_collection("MLKnowledgeBase"),
             embedding=embeddings,
             index_name="vector_index",
             relevance_score_fn="cosine",
@@ -62,13 +62,12 @@ class MongoDB():
             }
         }
         ]
-        collection = self._get_collection()
+        collection = self._get_collection("MLKnowledgeBase")
         result = collection.aggregate(pipeline)
         for doc in result:
             if doc["score"] >= 0.90:
                 return False
         return True
-
 
     def add_question(self, questions):
         vector_store = self._get_vectorstore()
@@ -95,7 +94,7 @@ class MongoDB():
 
         return filtered_documents
 
-    def add_document(self, doc, org_text, websites=None):
+    def add_document(self, doc, org_text,websites=None,):
         collection = self._get_collection()
         query = {
             "_id" : doc["_id"]
@@ -112,7 +111,4 @@ class MongoDB():
             print("MongoDB connection closed.")
         else:
             print("No MongoDB connection to close.")
-
-
-
 
