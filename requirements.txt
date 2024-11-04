@@ -1,0 +1,16 @@
+pymongo
+langchain
+setuptools
+wheel
+numpy
+langchain_community
+python-dotenv
+langgraph
+langchain-ollama
+langsmith
+langchain_mongodb
+boto3
+botocore
+python-dotenv
+scrapingbee
+bs4
