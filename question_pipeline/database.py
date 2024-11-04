@@ -3,7 +3,7 @@ from pymongo.server_api import ServerApi
 from pprint import pprint
 import os
 from dotenv import load_dotenv
-from base_embedding import get_embedding_model
+from base.base_embedding import get_embedding_model
 from langchain_mongodb import MongoDBAtlasVectorSearch
 from uuid import uuid4
 from langchain_core.documents import Document
@@ -27,7 +27,7 @@ class MongoDB():
     def _get_collection(self):
         mongo_client = self.client
         client = mongo_client['MLHorizon']
-        collection = client["MLKnowledgeBase"]
+        collection = client.MLKnowledgeBase
         return collection
 
     def _get_vectorstore(self):
@@ -84,26 +84,6 @@ class MongoDB():
                 documents.append(document)
         uuids = [str(uuid4()) for _ in range(len(documents))]
         vector_store.add_documents(documents=documents, ids=uuids)
-
-    def get_question(self):
-        collection = self._get_collection()
-        query = {
-            "content": None
-        }
-        filtered_documents = list(collection.find(query))
-
-        return filtered_documents
-
-    def add_document(self, doc, org_text,websites=None,):
-        collection = self._get_collection()
-        query = {
-            "_id" : doc["_id"]
-        }
-        update_operation = {
-            '$set': {"content" : org_text,
-                        "websites" : websites}
-        }
-        collection.update_one(query, update_operation)
 
     def close_connection(self):
         if self.client:

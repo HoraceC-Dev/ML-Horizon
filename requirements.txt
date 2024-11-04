@@ -2,13 +2,15 @@ pymongo
 langchain
 setuptools
 wheel
+numpy
 langchain_community
-apify_client
 python-dotenv
 langgraph
 langchain-ollama
 langsmith
 langchain_mongodb
-langchain-aws
 boto3
 botocore
+python-dotenv
+scrapingbee
+bs4
