@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#logo-container {
+    text-align: left; /* Center align the logo and tagline */
+    display: block; /* Ensure they are stacked */
+    padding: 0px;
+    margin-left: 0px;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.3);
+
+}
+
+#logo {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.7rem; /* Adjust size as needed */
+    color: #5b69ba; /* Set text color */
+    font-weight: bold; /* Control font weight */
+    text-transform: uppercase; /* Optional: Make all letters uppercase */
+    padding-top: 10px;
+    padding-left: 15px;/* Ensure the logo is displayed as a block element */
+}
+
+#tagline {
+    font-family: 'Comfortaa', sans-serif; /* Same as the logo for consistency */
+    font-size: 0.8rem; /* Slightly smaller than the logo text */
+    color: #5b69ba; /* A lighter color to make it visually secondary */ /* Adjust space between logo and tagline if needed */ /* Optional: Make it italic for differentiation */ /* Adjust space between logo and tagline if needed */
+    display: block;
+    padding-left:15px;
+    padding-bottom:5px;
+}
+
+#topHeader {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*#8BC6EC 9599E2 #f0f7ff*/ 
+    align-items: center;
+    color: white;
+    margin: 0; 
+    padding: 0; 
+    z-index: 1000;
+
+}
+
+.menu-button {
+    font-size: 20px;
+    color: #8baaec;
+    margin-left: 25px;
+    border: 5px solid #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.menu-button:hover {
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f0f7ff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index:1;
+}
+
+.dropdown-menu a{
+    font-style: bold;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.15s ease;
+    font-size: 15px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #898989;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.profile-button {
+    font-size: 20px;
+    color: #8baaec;
+    background-color: transparent;
+    margin-right: 25px;
+    border: none;
+    cursor: pointer;
+    border: 5px solid #ffffff;
+    transition: background-color 0.15s ease;
+}
+.profile-button:hover {
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f0f7ff;
+}
+
+.profile-menu a{
+    border: 0px;
+    color: black;
+    padding: 10px 20px;
+    background-color: #e3e3e3;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.15s ease;
+    font-size: 15px;
+}
+
+.profile-menu a:hover{
+    background-color: #898989;
+}
+
+#logout{
+    border: 0px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: #e3e3e3;
+    padding: 10px 25px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.15s ease;
+}
+
+#logout:hover{
+    background-color: #898989;
+}
+
+section {
+    padding: 20px;
+}
+
+/*
+#topHeader {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #b6d3ec;
+    color: black;
+}
+
+.menu-button {
+    font-size: 20px;
+    color: black;
+    background-color: #b6d3ec;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #555;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.profile-button {
+    font-size: 20px;
+    color: black;
+    background-color: #b6d3ec;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-menu a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-menu a:hover{
+    background-color: #555;
+}
+
+#logout{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+#logout:hover{
+    background-color: #f70707;
+}
+
+section {
+    padding: 20px;
+}
+*/

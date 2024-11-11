@@ -1,0 +1,14 @@
+{
+    "Regression Tasks": "Predict a continuous output (e.g., price, temperature, demand)",
+    "Classification Tasks": "Categorize data points into predefined classes (e.g., spam vs. not spam, disease detection)",
+    "Clustering and Grouping Tasks": "Discover groupings in data without pre-labeled classes (e.g., customer segmentation, image segmentation)",
+    "Dimensionality Reduction and Visualization": "Reduce features or visualize high-dimensional data (e.g., feature engineering, data visualization)",
+    "Recommendation Systems": "Recommend items or content based on user preferences (e.g., product recommendation, movie suggestions)",
+    "Natural Language Processing (NLP)": "Process, understand, and generate human language (e.g., text classification, translation, sentiment analysis)",
+    "Image Processing and Computer Vision": "Analyze and interpret visual information (e.g., object detection, image classification)",
+    "Anomaly Detection": "Identify unusual patterns or outliers (e.g., fraud detection, defect detection)",
+    "Time Series Forecasting": "Predict future values based on historical data (e.g., sales forecasting, stock price prediction)",
+    "Reinforcement Learning and Decision-Making": "Train agents to make sequential decisions (e.g., game playing, robotic control)",
+    "Transfer Learning and Few-Shot Learning": "Apply knowledge from one domain to another (e.g., domain adaptation, cross-domain image classification)",
+    "Generative Modeling": "Generate new data samples similar to existing data (e.g., image generation, text generation)"
+}

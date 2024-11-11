@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="../static/profilePage.css">
+</head>
+<body>
+    <div id="TopHeader"></div>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        
+        <div class="profile-info">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" value="Joe" disabled>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" value="Doe" disabled>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="john.doe@example.com" disabled>
+        </div>
+        
+        <div class="buttons">
+        <button id="editButton">Edit</button>
+        <button id="saveButton" style="display: none;">Save</button>
+        <button id="cancelButton" style="display: none;">Cancel</button>
+        </div>
+  </div>
+  
+  <script src="../static/js/dropDown.js"></script>
+  <script type="module" src="../static/js/profilePage.js"></script>
+  <script type="module" src="../static/js/mongoDataHandler.js"></script>
+</body>
+</html>

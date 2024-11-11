@@ -1,0 +1,90 @@
+{
+    "Regression Tasks": {
+        "Linear Regression": "Simple linear relationships",
+        "Polynomial Regression": "Nonlinear relationships",
+        "Support Vector Regression (SVR)": "Regression with support vector machines",
+        "Decision Trees (for Regression)": "Nonlinear, interpretable models",
+        "Random Forest Regressor": "Ensemble method for improved accuracy",
+        "Gradient Boosting Regressor (e.g., XGBoost, LightGBM)": "High-accuracy models for complex relationships",
+        "Neural Networks for Regression": "Complex, high-dimensional datasets"
+    },
+    "Classification Tasks": {
+        "Logistic Regression": "Simple binary classification",
+        "K-Nearest Neighbors (KNN)": "Instance-based classification",
+        "Support Vector Machines (SVM)": "Classification with margin maximization",
+        "Decision Trees (for Classification)": "Interpretable classification",
+        "Random Forest Classifier": "Ensemble method for robustness",
+        "Gradient Boosting Classifier (e.g., XGBoost, LightGBM)": "High-accuracy classification",
+        "Naive Bayes": "Text classification and document categorization",
+        "Neural Networks for Classification": "Complex classification tasks, including images and text",
+        "Convolutional Neural Networks (CNNs)": "Image and spatial data classification",
+        "Recurrent Neural Networks (RNNs)": "Sequence data, like time series or text classification"
+    },
+    "Clustering and Grouping Tasks": {
+        "K-Means Clustering": "General-purpose clustering",
+        "Hierarchical Clustering": "Visual hierarchy of clusters",
+        "DBSCAN": "Clustering with noise and varying densities",
+        "Gaussian Mixture Models (GMM)": "Probabilistic clusters with mixed distributions",
+        "Self-Organizing Maps (SOM)": "Dimensionality reduction and clustering for visualization",
+        "Spectral Clustering": "For complex structures in data, like community detection"
+    },
+    "Dimensionality Reduction and Visualization": {
+        "Principal Component Analysis (PCA)": "Linear dimensionality reduction",
+        "t-Distributed Stochastic Neighbor Embedding (t-SNE)": "High-dimensional data visualization",
+        "Independent Component Analysis (ICA)": "Signal separation and reduction",
+        "Autoencoders": "Deep learning-based dimensionality reduction"
+    },
+    "Recommendation Systems": {
+        "Collaborative Filtering": "Recommendations based on user-item interactions",
+        "Content-Based Filtering": "Recommendations based on item characteristics",
+        "Matrix Factorization (e.g., SVD)": "Decompose user-item interaction matrices",
+        "Factorization Machines": "Generalization of matrix factorization",
+        "Neural Collaborative Filtering": "Deep learning for recommendations",
+        "Graph Neural Networks (GNNs)": "Recommendations in graph structures, like social networks"
+    },
+    "Natural Language Processing (NLP)": {
+        "Bag-of-Words and TF-IDF": "Text vectorization for simpler tasks",
+        "Naive Bayes": "Document classification and sentiment analysis",
+        "Recurrent Neural Networks (RNNs)": "Sequence modeling (e.g., language modeling, translation)",
+        "Long Short-Term Memory (LSTM)": "Improved RNNs for long sequences",
+        "Transformers (e.g., BERT, GPT)": "State-of-the-art NLP models for text generation, summarization, and translation"
+    },
+    "Image Processing and Computer Vision": {
+        "Convolutional Neural Networks (CNNs)": "Core of image classification and object detection",
+        "Region-Based CNNs (R-CNN, Fast R-CNN)": "Object detection",
+        "YOLO (You Only Look Once)": "Real-time object detection",
+        "GANs (Generative Adversarial Networks)": "Image generation and enhancement",
+        "Autoencoders": "Image compression and feature extraction"
+    },
+    "Anomaly Detection": {
+        "Isolation Forest": "Efficient anomaly detection",
+        "One-Class SVM": "Anomaly detection in high-dimensional space",
+        "Autoencoders": "Detect anomalies by reconstruction error",
+        "Gaussian Mixture Models (GMM)": "Probabilistic approach to anomalies",
+        "K-Means Clustering": "Used for finding points far from cluster centroids"
+    },
+    "Time Series Forecasting": {
+        "ARIMA (AutoRegressive Integrated Moving Average)": "Traditional statistical method",
+        "Exponential Smoothing": "Smoothing for trend and seasonality",
+        "LSTMs (Long Short-Term Memory Networks)": "Deep learning for time series",
+        "Prophet": "Forecasting tool designed by Facebook",
+        "Seasonal Decomposition": "Trend and seasonality analysis"
+    },
+    "Reinforcement Learning and Decision-Making": {
+        "Q-Learning": "Basic reinforcement learning for discrete actions",
+        "Deep Q-Networks (DQN)": "Combines deep learning with Q-learning",
+        "Policy Gradient Methods": "Directly optimize actions",
+        "Actor-Critic Methods": "Combines policy-based and value-based learning",
+        "Proximal Policy Optimization (PPO)": "Stable and efficient reinforcement learning"
+    },
+    "Transfer Learning and Few-Shot Learning": {
+        "Transfer Learning with Pre-trained Models (e.g., ResNet, BERT)": "Fine-tuning on new tasks",
+        "Few-Shot Learning": "Learn from a few labeled examples",
+        "Meta-Learning": "“Learning to learn” for adaptability across tasks"
+    },
+    "Generative Modeling": {
+        "Generative Adversarial Networks (GANs)": "Generate realistic images, text, or other data",
+        "Variational Autoencoders (VAEs)": "Probabilistic models for generation and compression",
+        "Autoregressive Models (e.g., PixelRNN)": "Sequential data generation, often used in image and text synthesis"
+    }
+}

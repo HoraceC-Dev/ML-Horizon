@@ -1,0 +1,9 @@
+
+
+/* Styling for the resizer */
+.resizer {
+    width: 5px;
+    background-color: white;
+    cursor: col-resize;
+    position: relative;
+}

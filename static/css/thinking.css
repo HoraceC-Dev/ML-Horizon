@@ -1,0 +1,56 @@
+
+
+/* Dots container */
+.thinking-dots {
+    display: flex;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+/* Circle style */
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* Blink animation for circles */
+@keyframes blink {
+    0%, 20%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Button styling */
+.stop-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stop-button:hover {
+    background-color: #555;
+}

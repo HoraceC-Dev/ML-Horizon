@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Text Highlight</title>
+  <link rel="stylesheet" href="../static/css/canvasPage.css">
+  <link rel="stylesheet" href="../static/css/chat.css">
+  <link rel="stylesheet" href="../static/css/resizer.css">
+</head>
+<body>
+  <div id="questionBody" style="display:none;"></div>
+  <div id = "canvasBody">
+    <div id="TopHeader"></div>
+    <div class="container">
+      <div class="textContainer" id="leftPanel">
+          <!--<textarea id="textArea">Type and highlight any text here...</textarea>-->
+          <div class = "requirement" >
+            <header class="requirementHeader">Project</header>
+            <pre id="requirement"></pre>
+          </div>
+        </div>
+      <div class="resizer" id="resizer"></div>
+
+      <div class="chat-container" id="rightPanel">
+        <div class="messages" id="messages">
+        </div>
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type a message..." />
+            <button id="send-button">➤</button>
+        </div>
+      </div>
+        <div id="promptBox"></div>
+    </div>
+  </div>
+  <script type="module" src="../static/js/canvasPage.js"></script>
+  <script type="module" src="../static/js/chat.js"></script>
+  <script src="../static/js/resizer.js"></script>
+  <script type="module" src="../static/js/question.js"></script>
+  <script src="../static/js/dropDown.js"></script>
+</body>
+</html>
